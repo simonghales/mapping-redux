@@ -1,0 +1,43 @@
+{
+  "columns": [
+    {
+      "label": "Program",
+      "cards": [
+        {
+          "title": "Title goes here...",
+          "description": "Description goes here..."
+        },
+        {
+          "title": "Title goes here...",
+          "description": "Description goes here..."
+        },
+        {
+          "title": "Title goes here...",
+          "description": "Description goes here..."
+        }
+      ]
+    },
+    {
+      "label": "Program Outputs",
+      "cards": [
+        {
+          "title": "Title goes here...",
+          "description": "Description goes here..."
+        },
+        {
+          "title": "Title goes here...",
+          "description": "Description goes here..."
+        }
+      ]
+    },
+    {
+      "label": "Program Outcomes",
+      "cards": [
+        {
+          "title": "Title goes here...",
+          "description": "Description goes here..."
+        }
+      ]
+    }
+  ]
+}

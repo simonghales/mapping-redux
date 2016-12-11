@@ -1,0 +1,34 @@
+@import "../../styles/settings/settings.colors";
+@import "../../styles/settings/settings.editor";
+@import "../../styles/settings/settings.margins";
+@import "../../styles/tools/tools.buttons";
+@import "../../styles/tools/tools.typography";
+
+.EditorHeader
+{
+  background-color: $color____lightShade;
+  display:          flex;
+}
+
+.column
+{
+  @include typography____fontSizeSmallish;
+  cursor:      pointer;
+  color:       #727090;
+  font-weight: 700;
+  width:       $editor____defaultWidth;
+  padding:     $margin____medium;
+  text-align:  center;
+}
+
+.addNewWrapper
+{
+  display:     flex;
+  align-items: center;
+  margin-left: $margin____medium;
+}
+
+.addNew
+{
+  @include buttonAdd;
+}

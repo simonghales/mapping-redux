@@ -1,0 +1,20 @@
+
+@import "../../styles/settings/settings.colors";
+@import "../../styles/settings/settings.editor";
+
+.Editor
+{
+}
+
+.body
+{
+  display: flex;
+}
+
+.column
+{
+  width:        $editor____defaultWidth;
+  padding:      20px;
+  text-align:   center;
+  border-right: 1px solid $color____lightShade;
+}

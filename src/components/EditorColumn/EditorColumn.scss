@@ -1,0 +1,22 @@
+@import "../../styles/settings/settings.margins";
+@import "../../styles/tools/tools.buttons";
+
+.EditorColumn
+{
+}
+
+.card
+{
+  margin-top: $margin____medium;
+
+  &:first-of-type
+  {
+    margin-top: 0;
+  }
+
+}
+
+.addButton {
+  @include buttonCard;
+  margin-top: $margin____medium;
+}
