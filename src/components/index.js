@@ -16,5 +16,6 @@ export Editor from './Editor/Editor';
 export EditorCard from './EditorCard/EditorCard';
 export EditorColumn from './EditorColumn/EditorColumn';
 export EditorHeader from './EditorHeader/EditorHeader';
+export EditorNewCard from './EditorNewCard/EditorNewCard';
 export MainHeader from './MainHeader/MainHeader';
 export TestComponent from './TestComponent/TestComponent';

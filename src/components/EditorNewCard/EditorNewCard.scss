@@ -1,0 +1,21 @@
+@import "../../styles/tools/tools.card";
+
+.EditorNewCard
+{
+  @include card;
+
+  > textarea
+  {
+    background: none;
+    font-size:  .9rem;
+    display:    block;
+    width:      100%;
+    height:     100px;
+    padding:    15px;
+    border:     0;
+    resize:     none;
+    font-weight: 700;
+    text-align: center;
+  }
+
+}

@@ -4,22 +4,39 @@
       "label": "Program",
       "cards": [
         {
-          "title": "Title goes here...",
-          "description": "Description goes here..."
+          "title": "Asset operations",
+          "description": ""
         },
         {
-          "title": "Title goes here...",
-          "description": "Description goes here..."
+          "title": "Asset maintenance - unplanned",
+          "description": ""
         },
         {
-          "title": "Title goes here...",
-          "description": "Description goes here..."
+          "title": "Asset maintenance - planned",
+          "description": ""
+        },
+        {
+          "title": "Asset renewals",
+          "description": ""
+        },
+        {
+          "title": "Asset upgrade / enhancement",
+          "description": ""
+        },
+        {
+          "title": "Asset disposal",
+          "description": ""
         }
       ]
     },
     {
       "label": "Program Outputs",
       "cards": [
+      ]
+    },
+    {
+      "label": "Program Outcomes",
+      "cards": [
         {
           "title": "Title goes here...",
           "description": "Description goes here..."
@@ -27,12 +44,7 @@
         {
           "title": "Title goes here...",
           "description": "Description goes here..."
-        }
-      ]
-    },
-    {
-      "label": "Program Outcomes",
-      "cards": [
+        },
         {
           "title": "Title goes here...",
           "description": "Description goes here..."

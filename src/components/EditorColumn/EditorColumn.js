@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react';
-import { EditorCard } from 'components';
+import { EditorCard, EditorNewCard } from 'components';
 const styles = require('./EditorColumn.scss');
+const classNames = require('classnames');
 
 export default class EditorColumn extends Component {
 
@@ -26,10 +27,21 @@ export default class EditorColumn extends Component {
   }
 
   render() {
+    const {column} = this.props;
+    const {cards} = column;
+    const columnClassNames = classNames([
+      styles['EditorColumn'],
+      {
+        [styles['noCards']]: !cards.length
+      }
+    ]);
     return (
-      <div className={styles['EditorColumn']}>
-        <div>
+      <div className={columnClassNames}>
+        <div className={styles['cards']}>
           {this.renderCards()}
+        </div>
+        <div className={styles['newCard']}>
+          <EditorNewCard />
         </div>
         <button className={styles['addButton']}>
           Add new card

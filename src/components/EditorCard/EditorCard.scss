@@ -1,11 +1,9 @@
 @import "../../styles/settings/settings.margins";
+@import "../../styles/tools/tools.card";
 @import "../../styles/tools/tools.typography";
 
 .EditorCard {
-  @include typography____fontSizeSmallish;
-  background-color: #ffffff;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 0 2px rgba(0,0,0,0.05);
+  @include card;
   padding: $margin____smallMedium;
 }
 
@@ -15,4 +13,10 @@
 
 .description {
   margin-top: 5px;
+
+  .noDescription &
+  {
+    display: none;
+  }
+
 }

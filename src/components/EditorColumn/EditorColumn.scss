@@ -5,6 +5,17 @@
 {
 }
 
+.cards
+{
+  margin-bottom: $margin____medium;
+
+  .noCards &
+  {
+    display: none;
+  }
+
+}
+
 .card
 {
   margin-top: $margin____medium;
@@ -16,7 +27,12 @@
 
 }
 
-.addButton {
+.newCard
+{
+  margin-bottom: $margin____medium;
+}
+
+.addButton
+{
   @include buttonCard;
-  margin-top: $margin____medium;
 }
