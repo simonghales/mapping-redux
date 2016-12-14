@@ -30,9 +30,23 @@
 .newCard
 {
   margin-bottom: $margin____medium;
+
+  display:       none;
+
+  .addingNewCard &
+  {
+    display: block;
+  }
+
 }
 
 .addButton
 {
   @include buttonCard;
+
+  .addingNewCard &
+  {
+    display: none;
+  }
+
 }

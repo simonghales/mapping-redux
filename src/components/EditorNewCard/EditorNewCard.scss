@@ -1,21 +1,61 @@
+@import "../../styles/settings/settings.colors";
+@import "../../styles/tools/tools.buttons";
 @import "../../styles/tools/tools.card";
+@import "../../styles/tools/tools.general";
 
 .EditorNewCard
 {
+
+}
+
+.card {
   @include card;
 
   > textarea
   {
-    background: none;
-    font-size:  .9rem;
-    display:    block;
-    width:      100%;
-    height:     100px;
-    padding:    15px;
-    border:     0;
-    resize:     none;
-    font-weight: 700;
-    text-align: center;
+    border-radius: 3px;
+    background:    none;
+    font-size:     .9rem;
+    display:       block;
+    width:         100%;
+    height:        80px;
+    padding:       15px;
+    border:        0;
+    resize:        none;
+    font-weight:   700;
+    text-align:    center;
+
+    @include placeholder {
+      color: #abb8bf;
+    }
+
+    &:focus
+    {
+      background-color: $color____faintestShade;
+      outline:          none;
+    }
+
   }
 
+}
+
+.options {
+  margin-top: 5px;
+}
+
+.option {
+  margin-right: 5px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+}
+
+.addButton {
+  @include buttonSmallAdd;
+}
+
+.cancelButton {
+  @include buttonSmallCancel;
 }

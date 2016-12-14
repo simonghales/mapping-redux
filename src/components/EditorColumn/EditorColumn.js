@@ -9,6 +9,29 @@ export default class EditorColumn extends Component {
     column: PropTypes.object.isRequired
   }
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      newCardOpen: false
+    };
+
+    this.addNewCard = this.addNewCard.bind(this);
+    this.cancelNewCard = this.cancelNewCard.bind(this);
+  }
+
+  addNewCard() {
+    this.setState({
+      newCardOpen: true
+    });
+  }
+
+  cancelNewCard() {
+    this.setState({
+      newCardOpen: false
+    });
+  }
+
   renderCards() {
     const {column} = this.props;
     const {cards} = column;
@@ -27,12 +50,15 @@ export default class EditorColumn extends Component {
   }
 
   render() {
+    console.log('my state', this.state);
     const {column} = this.props;
+    const {newCardOpen} = this.state;
     const {cards} = column;
     const columnClassNames = classNames([
       styles['EditorColumn'],
       {
-        [styles['noCards']]: !cards.length
+        [styles['noCards']]: !cards.length,
+        [styles['addingNewCard']]: newCardOpen
       }
     ]);
     return (
@@ -41,9 +67,9 @@ export default class EditorColumn extends Component {
           {this.renderCards()}
         </div>
         <div className={styles['newCard']}>
-          <EditorNewCard />
+          <EditorNewCard cancelNewCard={this.cancelNewCard} />
         </div>
-        <button className={styles['addButton']}>
+        <button className={styles['addButton']} onClick={this.addNewCard}>
           Add new card
         </button>
       </div>

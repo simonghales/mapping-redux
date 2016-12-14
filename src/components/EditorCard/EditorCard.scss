@@ -1,3 +1,4 @@
+@import "../../styles/settings/settings.colors";
 @import "../../styles/settings/settings.margins";
 @import "../../styles/tools/tools.card";
 @import "../../styles/tools/tools.typography";
@@ -5,6 +6,11 @@
 .EditorCard {
   @include card;
   padding: $margin____smallMedium;
+
+  &:hover {
+    background-color: $color____faintestShade;
+  }
+
 }
 
 .title {

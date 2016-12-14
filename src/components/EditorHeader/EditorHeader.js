@@ -4,7 +4,7 @@ const styles = require('./EditorHeader.scss');
 export default class EditorHeader extends Component {
 
   static propTypes = {
-    columns: PropTypes.object.isRequired
+    columns: PropTypes.array.isRequired
   }
 
   renderColumns() {
