@@ -18,6 +18,7 @@ export default class EditorColumn extends Component {
 
     this.addNewCard = this.addNewCard.bind(this);
     this.cancelNewCard = this.cancelNewCard.bind(this);
+    this.createCard = this.createCard.bind(this);
   }
 
   addNewCard() {
@@ -27,6 +28,13 @@ export default class EditorColumn extends Component {
   }
 
   cancelNewCard() {
+    this.setState({
+      newCardOpen: false
+    });
+  }
+
+  createCard(title) {
+    console.log('create card....', title);
     this.setState({
       newCardOpen: false
     });
@@ -50,7 +58,6 @@ export default class EditorColumn extends Component {
   }
 
   render() {
-    console.log('my state', this.state);
     const {column} = this.props;
     const {newCardOpen} = this.state;
     const {cards} = column;
@@ -67,7 +74,7 @@ export default class EditorColumn extends Component {
           {this.renderCards()}
         </div>
         <div className={styles['newCard']}>
-          <EditorNewCard cancelNewCard={this.cancelNewCard} />
+          <EditorNewCard cancelNewCard={this.cancelNewCard} createCard={this.createCard} />
         </div>
         <button className={styles['addButton']} onClick={this.addNewCard}>
           Add new card
